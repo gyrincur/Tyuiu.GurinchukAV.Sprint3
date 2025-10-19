@@ -11,7 +11,7 @@ namespace Tyuiu.GurinchukAV.Sprint3.Task0.V15.Test
             double t = 0.7;
             int startValue = 1;
             int stopValue = 10;
-            double wait = 4.0632;
+            double wait = 4.063;
             double result = ds.GetSumSeries(t, startValue, stopValue);
             Assert.AreEqual(wait, result);
         }
