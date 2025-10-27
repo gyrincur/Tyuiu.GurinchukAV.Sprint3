@@ -5,18 +5,17 @@ namespace Tyuiu.GurinchukAV.Sprint3.Task5.V9.Lib
     {
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
-            double res = 0;
+            double sumSeries = 0;
+            int i, j;
 
-            for (int i = startValue1; i <= stopValue1; i++)
+            for (i = startValue1; i <= stopValue1; i++)
             {
-                for (int k = startValue2; k <= stopValue2; k++)
+                for (j = startValue2; j <= stopValue2; j++)
                 {
-                    res += 1 / Math.Sin(k);
+                    sumSeries = sumSeries + ((1 / Math.Sin(j)) + x);
                 }
             }
-
-            res += x;
-            return Math.Round(res, 3);
+            return Math.Round(sumSeries, 3);
         }
     }
 }
